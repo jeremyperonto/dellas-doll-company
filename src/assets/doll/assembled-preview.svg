@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 200 340">
+    <defs>
+        <radialGradient id="a" cx="50%" cy="28%" r="65%">
+            <stop offset="0%" stop-color="#fff8f0"/>
+            <stop offset="35%" stop-color="#ffe8d4"/>
+            <stop offset="70%" stop-color="#ffdbc0"/>
+            <stop offset="100%" stop-color="#e8b898"/>
+        </radialGradient>
+        <radialGradient id="b" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#e86060" stop-opacity=".55"/>
+            <stop offset="40%" stop-color="#f08080" stop-opacity=".4"/>
+            <stop offset="70%" stop-color="#ff9090" stop-opacity=".2"/>
+            <stop offset="100%" stop-color="#ffa0a0" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+    <g transform="translate(-45 -36)scale(1.45)">
+        <path fill="#ff6fa8" stroke="#e84888" stroke-width="1.5" d="M48 78c0-43 22-64 52-64s52 21 52 64M48 78c-10 7-24 32-30 77-2 10 6 13 12 7 4-10 10-42 22-67ZM152 78c10 7 24 32 30 77 2 10-6 13-12 7-4-10-10-42-22-67Z"/>
+        <circle cx="48" cy="80" r="5" fill="#e84888"/>
+        <circle cx="48" cy="80" r="3" fill="#ff6fa8"/>
+        <circle cx="152" cy="80" r="5" fill="#e84888"/>
+        <circle cx="152" cy="80" r="3" fill="#ff6fa8"/>
+    </g>
+    <rect width="16" height="48" x="80" y="246" fill="url(#a)" stroke="#8b6b5e" stroke-width="1.8" rx="8"/>
+    <rect width="16" height="48" x="104" y="246" fill="url(#a)" stroke="#8b6b5e" stroke-width="1.8" rx="8"/>
+    <ellipse cx="88" cy="298" fill="#c8a0d8" stroke="#8b6b5e" stroke-width="1.8" rx="16" ry="12"/>
+    <ellipse cx="112" cy="298" fill="#c8a0d8" stroke="#8b6b5e" stroke-width="1.8" rx="16" ry="12"/>
+    <rect width="68" height="95" x="66" y="158" fill="url(#a)" stroke="#8b6b5e" stroke-width="1.8" rx="26"/>
+    <circle cx="62" cy="200" r="8" fill="url(#a)" stroke="#8b6b5e" stroke-width="1.5"/>
+    <circle cx="138" cy="200" r="8" fill="url(#a)" stroke="#8b6b5e" stroke-width="1.5"/>
+    <rect width="68" height="95" x="66" y="158" fill="#b8a0d8" stroke="#8b6b5e" stroke-width="1.8" rx="26"/>
+    <circle cx="62" cy="200" r="8" fill="#b8a0d8" stroke="#8b6b5e" stroke-width="1.5"/>
+    <circle cx="138" cy="200" r="8" fill="#b8a0d8" stroke="#8b6b5e" stroke-width="1.5"/>
+    <path fill="none" stroke="#d4b8ff" stroke-linecap="round" stroke-width="2" d="M84 164q16 10 32 0"/>
+    <circle cx="91.4" cy="196" r="4.8" fill="#444"/>
+    <circle cx="108.6" cy="196" r="4.8" fill="#444"/>
+    <circle cx="100" cy="208" r="12" fill="#fff" opacity=".85"/>
+    <circle cx="95.8" cy="206.8" r="1.8" fill="#333"/>
+    <circle cx="104.2" cy="206.8" r="1.8" fill="#333"/>
+    <circle cx="100" cy="210.4" r="1.2" fill="#666"/>
+    <rect width="60" height="6" x="70" y="246" fill="#d4b8ff" stroke="#8b6b5e" stroke-width="1.5" opacity=".85" rx="3"/>
+    <path fill="#c8b0e8" stroke="#8b6b5e" stroke-width="1.8" d="M66 250q-8 30-12 60 24 12 46 14 22-2 46-14-4-30-12-60Z"/>
+    <g transform="translate(-45 -36)scale(1.45)">
+        <rect width="20" height="18" x="90" y="122" fill="url(#a)" rx="10"/>
+        <path fill="url(#a)" stroke="#8b6b5e" stroke-width="1.8" d="M100 132c-40 0-52-24-52-54 0-38 22-54 52-54s52 16 52 54c0 30-12 54-52 54Z"/>
+        <circle cx="62" cy="102" r="18" fill="url(#b)"/>
+        <circle cx="138" cy="102" r="18" fill="url(#b)"/>
+        <path fill="none" stroke="#e07888" stroke-linecap="round" stroke-width="2" d="M93 112q7 6 14 0"/>
+    </g>
+    <g transform="translate(-45 -36)scale(1.45)">
+        <ellipse cx="78" cy="90" fill="#2a1508" rx="9" ry="12"/>
+        <circle cx="75" cy="85" r="3.5" fill="#fff" opacity=".95"/>
+        <circle cx="81" cy="94" r="1.8" fill="#fff" opacity=".6"/>
+        <ellipse cx="122" cy="90" fill="#2a1508" rx="9" ry="12"/>
+        <circle cx="125" cy="85" r="3.5" fill="#fff" opacity=".95"/>
+        <circle cx="119" cy="94" r="1.8" fill="#fff" opacity=".6"/>
+        <path fill="none" stroke="#5a3a2a" stroke-linecap="round" stroke-width="2.2" d="M67 74q11-5 20 0M113 74q9-5 18 0"/>
+    </g>
+    <path fill="#ffb0d0" d="M24.6 68.4c2.9-63.8 34.8-89.9 75.4-87 40.6-2.9 72.5 23.2 75.4 87-5.8-31.9-31.9-49.3-75.4-46.4-43.5-2.9-69.6 14.5-75.4 46.4"/>
+    <path fill="none" stroke="rgba(255,255,255,0.35)" stroke-linecap="round" stroke-width="4.35" d="M56.5-7q43.5-11.6 87 0"/>
+    <path fill="none" stroke="#e84888" stroke-linecap="round" stroke-width="2.175" d="m59.4 7.5-2.9 40.6" opacity=".3"/>
+    <path fill="none" stroke="#e84888" stroke-linecap="round" stroke-width="2.175" d="M100 4.6v39.15" opacity=".25"/>
+    <path fill="none" stroke="#e84888" stroke-linecap="round" stroke-width="2.175" d="m140.6 7.5 2.9 40.6" opacity=".3"/>
+</svg>
