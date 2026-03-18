@@ -35,9 +35,9 @@ export default function DollPreview({ cfg, size = 120, animated = true }) {
         <div
           style={{
             fontFamily: "'Black Han Sans',cursive",
-            fontSize: ".9rem",
+            fontSize: "1.3rem",
             color: "var(--navy)",
-            marginTop: 4,
+            marginTop: -2,
             letterSpacing: ".5px",
             textAlign: "center",
           }}

@@ -474,12 +474,6 @@ export default function Phase4Sales({ doll, biz, onRestart }) {
           DELLA'S DOLL COMPANY
         </div>
         <DollPreview cfg={cfg} size={140} animated={false} />
-        <div style={{
-          fontFamily: "'Black Han Sans',cursive", fontSize: "1.3rem",
-          color: "var(--navy)", margin: "8px 0",
-        }}>
-          {doll.name}
-        </div>
         {/* Stats */}
         <div style={{
           display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center",
