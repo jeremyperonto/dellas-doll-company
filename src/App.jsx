@@ -8,6 +8,7 @@ import UnboxingReveal from "./phases/UnboxingReveal.jsx";
 import Phase2Factory from "./phases/Phase2Factory.jsx";
 import Phase3Journey from "./phases/Phase3Journey.jsx";
 import Phase4Sales from "./phases/Phase4Sales.jsx";
+import { JPBadge, SiteFooter } from "./components/SiteBadge.jsx";
 
 export default function App() {
   const [phase, setPhase] = useState(0);
@@ -38,6 +39,8 @@ export default function App() {
     <>
       <style>{FONTS}{css}</style>
       <div className="app" onClick={() => initAudio()}>
+        <JPBadge />
+
         {/* Sound mute toggle */}
         {phase > 0 && (
           <button className="mute-btn" onClick={toggleMute} title={mute ? "Unmute" : "Mute"}>

@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import DollSVG from "../components/DollSVG.jsx";
 import { initAudio, playClick } from "../sound.js";
+import { SiteFooter } from "../components/SiteBadge.jsx";
 
 export default function HomeScreen({ onStart }) {
   const steps = [
@@ -147,6 +148,8 @@ export default function HomeScreen({ onStart }) {
           </p>
         </div>
       </div>
+
+      <SiteFooter />
     </div>
   );
 }
