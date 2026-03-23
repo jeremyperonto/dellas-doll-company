@@ -88,8 +88,6 @@ export function JPBadge({ variant = "auto" }) {
         textDecoration: "none",
         fontFamily: "'Black Han Sans', sans-serif",
         fontSize: "0.7rem",
-        letterSpacing: "0.5px",
-        paddingLeft: "0.5px",
         lineHeight: 1,
         transition: "background .2s, color .2s",
       }}
