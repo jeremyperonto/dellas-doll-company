@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import DollSVG from "../components/DollSVG.jsx";
 import { initAudio, playClick } from "../sound.js";
 
@@ -103,10 +104,10 @@ export default function HomeScreen({ onStart }) {
 
       {/* STEPS */}
       <div style={{ background: "var(--navy)", padding: "20px 16px" }}>
-        <div style={{ maxWidth: 480, margin: "0 auto", display: "flex", gap: 0 }}>
+        <div style={{ maxWidth: 480, margin: "0 auto", display: "flex", alignItems: "center" }}>
           {steps.map((s, i) => (
-            <div key={s.label} style={{ flex: 1, display: "flex", alignItems: "center" }}>
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: 1 }}>
+            <Fragment key={s.label}>
+              <div style={{ flex: 1, display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div
                   style={{
                     width: 44,
@@ -130,7 +131,7 @@ export default function HomeScreen({ onStart }) {
               {i < steps.length - 1 && (
                 <div style={{ width: 14, height: 2, background: "rgba(255,255,255,.2)", flexShrink: 0, marginBottom: 18, borderRadius: 1 }} />
               )}
-            </div>
+            </Fragment>
           ))}
         </div>
       </div>

@@ -27,30 +27,33 @@ export default function QualityInspect({ onComplete, dollCfg }) {
 
   const allDone = ZONES.every((z) => stamped[z.id]);
 
+  const detectZone = useCallback((e) => {
+    if (!dollRef.current) return null;
+    const dr = dollRef.current.getBoundingClientRect();
+    const relY = (e.clientY - dr.top) / dr.height;
+    const relX = (e.clientX - dr.left) / dr.width;
+    if (relX >= -0.1 && relX <= 1.1) {
+      const found = ZONES.find((z) => !stamped[z.id] && relY >= z.yMin && relY < z.yMax);
+      return found?.id || null;
+    }
+    return null;
+  }, [stamped]);
+
   const onMove = useCallback((e) => {
     if (approved) return;
     const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    setMagPos({ x, y });
+    setMagPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+    setActiveZone(detectZone(e));
+  }, [detectZone, approved]);
 
-    if (dollRef.current) {
-      const dr = dollRef.current.getBoundingClientRect();
-      const relY = (e.clientY - dr.top) / dr.height;
-      const relX = (e.clientX - dr.left) / dr.width;
-      if (relX >= -0.1 && relX <= 1.1) {
-        const found = ZONES.find((z) => !stamped[z.id] && relY >= z.yMin && relY < z.yMax);
-        setActiveZone(found?.id || null);
-      } else {
-        setActiveZone(null);
-      }
-    }
-  }, [stamped, approved]);
-
-  const onClick = useCallback(() => {
-    if (!activeZone || stamped[activeZone] || approved) return;
+  const onClick = useCallback((e) => {
+    if (approved) return;
+    const rect = e.currentTarget.getBoundingClientRect();
+    setMagPos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+    const zone = detectZone(e);
+    if (!zone || stamped[zone]) return;
     playStamp();
-    const next = { ...stamped, [activeZone]: true };
+    const next = { ...stamped, [zone]: true };
     setStamped(next);
     setActiveZone(null);
     if (ZONES.every((z) => next[z.id])) {
@@ -60,7 +63,7 @@ export default function QualityInspect({ onComplete, dollCfg }) {
         setTimeout(onComplete, 1200);
       }, 300);
     }
-  }, [activeZone, stamped, approved, onComplete]);
+  }, [detectZone, stamped, approved, onComplete]);
 
   return (
     <div className="mini-game"
