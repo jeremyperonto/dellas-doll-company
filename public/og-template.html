@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    font-family: 'Black Han Sans', sans-serif;
+  }
+
+  .card {
+    width: 1200px;
+    height: 630px;
+    background: linear-gradient(135deg, #E8354A 0%, #FF6B7A 40%, #FFB5C8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Decorative shapes */
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.12;
+  }
+  .s1 { width: 300px; height: 300px; background: #fff; top: -80px; left: -60px; }
+  .s2 { width: 200px; height: 200px; background: #1A2690; bottom: -40px; right: -30px; }
+  .s3 { width: 120px; height: 120px; background: #FFD34E; top: 40px; right: 100px; }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    z-index: 1;
+    padding: 0 80px;
+  }
+
+  .dolls {
+    display: flex;
+    gap: 20px;
+    flex-shrink: 0;
+  }
+
+  .doll-frame {
+    width: 140px;
+    height: 180px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+  }
+
+  .doll-frame svg {
+    width: 100px;
+    height: 140px;
+  }
+
+  .text {
+    color: white;
+    flex: 1;
+  }
+
+  .title {
+    font-size: 64px;
+    line-height: 1.05;
+    text-shadow: 2px 4px 0 rgba(0,0,0,0.15);
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+    letter-spacing: 3px;
+    opacity: 0.85;
+    margin-bottom: 24px;
+  }
+
+  .desc {
+    font-family: system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+    opacity: 0.9;
+    max-width: 420px;
+  }
+
+  .domain {
+    position: absolute;
+    bottom: 24px;
+    right: 40px;
+    font-family: system-ui, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(255,255,255,0.6);
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="shape s1"></div>
+  <div class="shape s2"></div>
+  <div class="shape s3"></div>
+
+  <div class="content">
+    <div class="dolls">
+      <!-- Doll 1 -->
+      <div class="doll-frame">
+        <svg viewBox="0 0 80 120">
+          <circle cx="40" cy="32" r="18" fill="#F5D0B0"/>
+          <path d="M22 32 Q22 14 40 14 Q58 14 58 32 Q54 22 40 22 Q26 22 22 32Z" fill="#2A1B0A"/>
+          <rect x="22" y="28" width="6" height="20" rx="3" fill="#2A1B0A"/>
+          <rect x="52" y="28" width="6" height="20" rx="3" fill="#2A1B0A"/>
+          <circle cx="35" cy="32" r="2.5" fill="#2A1B0A"/>
+          <circle cx="45" cy="32" r="2.5" fill="#2A1B0A"/>
+          <circle cx="36" cy="31" r="0.8" fill="#fff"/>
+          <circle cx="46" cy="31" r="0.8" fill="#fff"/>
+          <path d="M37 38 Q40 41 43 38" stroke="#C0695A" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M30 52 L27 90 Q40 96 53 90 L50 52 Q40 55 30 52Z" fill="#FFB5C8"/>
+        </svg>
+      </div>
+      <!-- Doll 2 -->
+      <div class="doll-frame">
+        <svg viewBox="0 0 80 120">
+          <circle cx="40" cy="32" r="18" fill="#C68642"/>
+          <path d="M22 32 Q22 14 40 14 Q58 14 58 32 Q54 22 40 22 Q26 22 22 32Z" fill="#B0E0FF"/>
+          <rect x="20" y="24" width="5" height="28" rx="2.5" fill="#B0E0FF" opacity="0.7"/>
+          <rect x="55" y="24" width="5" height="28" rx="2.5" fill="#B0E0FF" opacity="0.7"/>
+          <circle cx="35" cy="32" r="2.5" fill="#2A1B0A"/>
+          <circle cx="45" cy="32" r="2.5" fill="#2A1B0A"/>
+          <circle cx="36" cy="31" r="0.8" fill="#fff"/>
+          <circle cx="46" cy="31" r="0.8" fill="#fff"/>
+          <path d="M37 38 Q40 41 43 38" stroke="#8B5E3C" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M30 52 L27 90 Q40 96 53 90 L50 52 Q40 55 30 52Z" fill="#5B9BD5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="text">
+      <div class="title">DELLA'S<br>DOLL<br>COMPANY</div>
+      <div class="subtitle">HOW TOYS ARE MADE</div>
+      <div class="desc">Design, manufacture, ship, and sell a doll — learn how real supply chains work!</div>
+    </div>
+  </div>
+
+  <div class="domain">jeremyperonto.com</div>
+</div>
+</body>
+</html>
